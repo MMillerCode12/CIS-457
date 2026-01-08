@@ -1,3 +1,3 @@
 <h1>DNS Resolver</h1>
 
-<p>This is a project I made for CIS 457 at GVSU (Data Communications). It is a DNS resolver that will take any URL that it is given and will return back the IP address the URL is linked to.</p>
+<p>This is a project I made for CIS 457 at GVSU (Data Communications). It is a DNS resolver that will take any URL that it is given and will return back the IP address the URL is linked to. This DNS resolver is done through an iterative process, where I first query the root server, then the TLD server, and then the authroitative server until I receive an answer that contains the final IP address. On top of this, I also implemented a cache for the DNS resolver so if I query for something I already know the answer to, instead of going through the whole process again, I can skip the line by pulling the answer from my cache and save lots of time! Through this project, I learned a lot about how DNS resolving works both conceptually and in practice. </p>
